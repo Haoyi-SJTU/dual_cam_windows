@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 编译 OpenCV",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                // 1. 头文件路径变成了 MSYS2 里面的路径
+                "-I",
+                "C:/msys64/ucrt64/include/opencv4",
+                // 2. 库文件路径
+                "-L",
+                "C:/msys64/ucrt64/lib",
+                // 3. 库名字不再需要加版本号后缀了！极度清爽！
+                "-l",
+                "opencv_core",
+                "-l",
+                "opencv_highgui",
+                "-l",
+                "opencv_imgproc",
+                "-l",
+                "opencv_videoio"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译器: C:/msys64/ucrt64/bin/g++.exe"
+        }
+    ]
+}
