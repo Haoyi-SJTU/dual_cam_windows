@@ -1,8 +1,17 @@
 # Dual-USB-Camera Capture & Recorder on Windows
 
 A lightweight, efficient C++ application using OpenCV to simultaneously capture video streams from two USB cameras, concatenate the frames side-by-side (split-screen), and record the output to an MP4 file with a dynamically generated timestamped filename. 
-
 This setup is optimized for Windows platforms and is ideal for multi-camera monitoring, stereo vision, or robotic perception tasks.
+
+
+<img align="left" width="66" src="https://github.com/Haoyi-SJTU/dual_cam_windows/blob/main/fig/Snipaste_2026-03-10_21-07-35.png" />
+
+**This project is packaged into an EXE program. You can use it directly without compilation.**
+
+(The EXE program is available at [google drive](https://drive.google.com/file/d/1W0j8bkAQOiD0rl1GegGiqAEv07h9f2Qo/view?usp=drive_link) or
+[aliyun Drive](https://www.alipan.com/s/htftbBULUES). This program is compatible with Windows 10 and Windows 11, and it uses USB cameras #1 and #2 by default. If your computer or camera configuration is different, please modify the source code. )
+
+
 
 **Features**
 * **Simultaneous Dual Capture**: Reads from two USB cameras simultaneously.
@@ -119,10 +128,20 @@ Open the **MSYS2 UCRT64** terminal (Download in [MSYS2](https://www.msys2.org/) 
 4. A Qt-based window will appear displaying the live dual-feed.     
    Press `ESC` while the video window is focused to safely stop recording and save the .mp4 file.
 
+![](https://github.com/Haoyi-SJTU/dual_cam_windows/blob/main/fig/Snipaste_2026-03-10_11-34-06.png)
+
+---
 
 # Windows 双USB摄像头采集与录制
 
 一款轻量高效的C++应用程序，基于OpenCV实现同时采集两个USB摄像头的视频流，将帧画面并排拼接（分屏显示），并将输出内容录制为MP4文件，文件名由时间戳动态生成。该工具针对Windows平台优化，适用于多摄像头监控、立体视觉或机器人感知等场景。
+
+<img align="left" width="66" src="https://github.com/Haoyi-SJTU/dual_cam_windows/blob/main/fig/Snipaste_2026-03-10_21-07-35.png" />
+
+**本项目已经封装为程序，您可以直接下载使用，不需要编译。**
+
+(制作好的EXE程序可以在 [谷歌云](https://drive.google.com/file/d/1W0j8bkAQOiD0rl1GegGiqAEv07h9f2Qo/view?usp=drive_link) 或
+[阿里云](https://www.alipan.com/s/htftbBULUES) 处下载. 本程序适用于windows10 和windows11，并且程序默认使用1号和2号USB相机，如果您的电脑或相机配置有不同，请在源码中修改。 )
 
 ## 特性
 * **双摄像头同步采集**：同时读取两个USB摄像头的视频流。
@@ -233,4 +252,7 @@ pacman -S mingw-w64-ucrt-x86_64-qt6-base
    ```Bash
    .\cam.exe
    ```
+
 4. 此时会弹出基于 Qt 的窗口，显示双摄像头实时画面。在视频窗口处于激活状态时，按下`ESC`键可安全停止录制并保存 MP4 文件。
+
+![](https://github.com/Haoyi-SJTU/dual_cam_windows/blob/main/fig/Snipaste_2026-03-10_11-34-06.png)
