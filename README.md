@@ -1,5 +1,8 @@
 # Dual-USB-Camera Capture & Recorder on Windows
 
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)
+
 A lightweight, efficient C++ application using OpenCV to simultaneously capture video streams from two USB cameras, concatenate the frames side-by-side (split-screen), and record the output to an MP4 file with a dynamically generated timestamped filename. 
 This setup is optimized for Windows platforms and is ideal for multi-camera monitoring, stereo vision, or robotic perception tasks.
 
